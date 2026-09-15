@@ -31,7 +31,7 @@ O mesmo ativo que fez o Mappin crescer no século passado — crédito acessíve
 Poucas unidades físicas, bem localizadas, pra consolidar o nome Mappin de novo no mercado capixaba — não é sobre estar em todo lugar, é sobre ser inconfundível onde está.
 
 **Movimento 02 — Rede de parceiros no interior**
-Parcerias com lojas do interior do Espírito Santo — sobretudo vestuário, moda e artigos variados — que passam a vender pro público da capital sem virar concorrentes da loja física.
+Parcerias com pequenos e médios negócios capixabas do interior — moda e acessórios, casa e decoração, tecnologia, beleza e lifestyle — que passam a vender pro público da capital sem virar concorrentes da loja física.
 
 **Movimento 03 — O crediário como elo**
 Com os juros em alta no Brasil, o crediário Mappin ES vira vantagem real dos dois lados: crédito justo pra quem tem renda na capital, capital de giro alternativo pra loja confiável do interior.
@@ -56,7 +56,7 @@ O vermelho do letreiro histórico do Mappin ganha um símbolo novo — a marca d
 | Insight | Com os juros do país nas alturas, até quem ganha bem pensa duas vezes antes de parcelar em qualquer cartão. |
 | Benefício procurado | Comprar numa loja física de referência na cidade, com crediário justo, sem os juros abusivos do mercado. |
 | Proposta de valor | Poucas lojas, mas lojas-âncora: o Mappin ES volta como ponto físico de referência em Vitória e Vila Velha, com crediário próprio e curadoria — inclusive de marcas parceiras do interior. |
-| Mensagem | "Menos lojas, mais motivo pra visitar. O crediário Mappin ES sem os juros que pesam no seu bolso." |
+| Mensagem | "O Mappin voltou. Mas agora, do seu jeito." — ideia central: "O que você procura. E o que você ainda vai descobrir." (nostalgia chama atenção, mas o foco é a nova experiência — releitura, não nostalgia) |
 | Touchpoint | Loja flagship em pontos nobres da Grande Vitória + mídia paga local + parceria com prédios e condomínios. |
 | Formato | Loja conceito (showroom) + app com crediário digital integrado, válido também nas lojas parceiras do interior. |
 | CTA | "Conheça a loja e simule seu crediário sem os juros abusivos do mercado." |
@@ -68,7 +68,7 @@ O vermelho do letreiro histórico do Mappin ganha um símbolo novo — a marca d
 
 | Campo | Conteúdo |
 |---|---|
-| Segmento | Lojas de vestuário, moda e artigos variados do interior do Espírito Santo, com boa reputação na própria cidade. |
+| Segmento | Pequenos e médios negócios capixabas do interior — moda e acessórios, casa e decoração, tecnologia, beleza e autocuidado, lifestyle e produtos criativos — que já vendem pro consumidor final e buscam mais alcance e presença digital. |
 | ICP | Negócio físico consolidado no interior, sem operação online robusta, buscando crescer sem depender de crédito bancário caro. |
 | Necessidade | Vender pro público de maior renda da Grande Vitória sem montar e-commerce próprio nem se expor aos juros altos pra capital de giro. |
 | Buying center | Dono da loja decide, contador valida o custo — decisão mais direta, pela confiança pessoal típica do comércio do interior. |
@@ -88,7 +88,7 @@ O vermelho do letreiro histórico do Mappin ganha um símbolo novo — a marca d
 |---|---|
 | Lado ativado primeiro | Empresas — recrutamos com curadoria as lojas confiáveis do interior antes de abrir a loja flagship pro grande público. |
 | Como consumidores atraem sellers | O público de alto poder aquisitivo da loja flagship em Vitória vira a prova de demanda que convence a loja do interior a entrar. |
-| Como sellers aumentam o valor pro consumidor | Vestuário, moda e artigos variados do interior trazem a variedade que poucas lojas físicas sozinhas não teriam espaço pra estocar. |
+| Como sellers aumentam o valor pro consumidor | Moda, casa, tecnologia, beleza e lifestyle do interior trazem a variedade que poucas lojas físicas sozinhas não teriam espaço pra estocar. |
 | Ideia central do lançamento | "Poucas lojas na capital, uma vitrine pro Espírito Santo inteiro" — a loja flagship de Vitória abre com o catálogo já parceiro do interior. |
 | Experiência que conecta os dois lados | Um único crediário, válido tanto na loja flagship da Grande Vitória quanto nas lojas parceiras do interior. |
 | Métrica de equilíbrio | Compradores ativos por loja parceira do interior — mostra se a oferta está sendo absorvida. |
