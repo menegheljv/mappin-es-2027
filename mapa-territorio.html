@@ -16,14 +16,12 @@
     --pink-soft:#EFCFCB;
     --ink:#2B1408;
     --ink-soft:#6B5248;
-    --interior-fill:#EFCFCB;
-    --gv-fill:#C2540A;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   body{ background:#2b2b2b; font-family:'Inter',sans-serif; }
   .slide{
     width:1400px;
-    height:1600px;
+    height:1700px;
     position:relative;
     overflow:hidden;
     background:var(--white);
@@ -42,10 +40,38 @@
   .legend{ display:flex; gap:34px; margin-top:26px; flex-wrap:wrap; }
   .legend-item{ display:flex; align-items:center; gap:12px; font-weight:700; font-size:19px; color:var(--ink); }
   .dot{ width:22px; height:22px; border-radius:50%; display:inline-block; flex:0 0 auto; }
-  .pin-label{
-    font-family:'Bebas Neue'; font-size:26px; letter-spacing:.02em; fill:var(--ink);
+  .map-wrap{
+    position:relative;
+    width:560px;
+    margin:36px auto 0 auto;
   }
-  .pin-sub{ font-family:'Inter'; font-weight:700; font-size:15px; fill:var(--ink-soft); text-transform:uppercase; letter-spacing:.05em; }
+  .map-wrap img.base{ display:block; width:100%; height:auto; }
+  .pin{
+    position:absolute;
+    transform:translate(-50%,-50%);
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .pin .dotpin{
+    width:26px; height:26px; border-radius:50%;
+    background:var(--white);
+    border:5px solid var(--red);
+    flex:0 0 auto;
+    box-shadow:0 2px 6px rgba(0,0,0,.25);
+  }
+  .pin.flagship .dotpin{ width:34px; height:34px; border-width:7px; background:var(--orange); border-color:var(--white); }
+  .pin-text{ background:var(--white); border-radius:10px; padding:6px 14px; box-shadow:0 2px 10px rgba(0,0,0,.18); white-space:nowrap; }
+  .pin-text .city{ font-family:'Bebas Neue'; font-size:24px; color:var(--red); letter-spacing:.02em; line-height:1; }
+  .pin-text .tag{ font-family:'Inter'; font-weight:800; font-size:12px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:.05em; }
+  .gv-ring{
+    position:absolute;
+    width:150px; height:150px;
+    border-radius:50%;
+    border:4px dashed var(--orange);
+    transform:translate(-50%,-50%);
+    opacity:.8;
+  }
   .footer{
     position:absolute; left:90px; right:90px; bottom:44px;
     display:flex; justify-content:space-between; align-items:center;
@@ -57,54 +83,39 @@
 <section class="slide">
   <div class="eyebrow">Mappin ES 2027 · Território</div>
   <h1 class="headline">Grande Vitória<br/>e o interior</h1>
-  <p style="font-size:19px; font-weight:500; color:var(--ink-soft); margin-top:14px; max-width:780px; line-height:1.5;">
-    Mapa ilustrativo do Espírito Santo — a loja-âncora fica na Grande Vitória, a rede de parceiros se espalha pelo interior, começando por Cachoeiro de Itapemirim e Linhares.
+  <p style="font-size:19px; font-weight:500; color:var(--ink-soft); margin-top:14px; max-width:900px; line-height:1.5;">
+    A loja-âncora fica na Grande Vitória, a rede de parceiros se espalha pelo interior — começando por Cachoeiro de Itapemirim e Linhares.
   </p>
 
   <div class="legend">
-    <div class="legend-item"><span class="dot" style="background:var(--gv-fill);"></span> Grande Vitória — loja-âncora</div>
-    <div class="legend-item"><span class="dot" style="background:var(--interior-fill); border:2px solid var(--red);"></span> Interior — rede de parceiros</div>
+    <div class="legend-item"><span class="dot" style="background:var(--orange);"></span> Grande Vitória — loja-âncora</div>
+    <div class="legend-item"><span class="dot" style="background:var(--white); border:5px solid var(--red);"></span> Interior — unidade parceira</div>
   </div>
 
-  <svg viewBox="0 0 500 800" width="620" height="992" style="display:block; margin:40px auto 0 auto;">
-    <!-- Silhueta ilustrativa do Espírito Santo (não georreferenciada) -->
-    <path d="M230,40 L280,55 L310,90 L300,140 L322,182 L312,230 L332,280 L322,330
-             L345,372 L322,412 L300,460 L280,510 L250,540 L200,520 L150,480
-             L120,420 L100,350 L90,280 L100,200 L120,130 L160,70 Z"
-          fill="var(--interior-fill)" stroke="var(--red)" stroke-width="4" stroke-linejoin="round"/>
+  <div class="map-wrap">
+    <img class="base" src="data:image/png;base64,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" alt="Mapa do Espírito Santo" />
 
-    <!-- Zona Grande Vitória -->
-    <circle cx="333" cy="372" r="62" fill="var(--gv-fill)" opacity="0.92"/>
-    <circle cx="333" cy="372" r="62" fill="none" stroke="var(--white)" stroke-width="3"/>
+    <div class="gv-ring" style="left:87.5%; top:59.7%;"></div>
 
-    <!-- Pino Vitória / Grande Vitória (loja-âncora) -->
-    <g>
-      <circle cx="333" cy="372" r="14" fill="var(--white)"/>
-      <circle cx="333" cy="372" r="7" fill="var(--red-deep)"/>
-      <text x="370" y="364" class="pin-label">Vitória</text>
-      <text x="370" y="388" class="pin-sub">Loja-âncora</text>
-    </g>
+    <div class="pin flagship" style="left:87.5%; top:59.7%;">
+      <div class="dotpin"></div>
+      <div class="pin-text"><div class="city">Vitória</div><div class="tag">Loja-âncora</div></div>
+    </div>
 
-    <!-- Pino Linhares (unidade parceira) -->
-    <g>
-      <circle cx="320" cy="180" r="12" fill="var(--red)"/>
-      <circle cx="320" cy="180" r="5" fill="var(--white)"/>
-      <text x="345" y="172" class="pin-label" style="font-size:24px;">Linhares</text>
-      <text x="345" y="194" class="pin-sub">Unidade parceira</text>
-    </g>
+    <div class="pin" style="left:85.1%; top:33.7%;">
+      <div class="dotpin"></div>
+      <div class="pin-text"><div class="city">Linhares</div><div class="tag">Unidade parceira</div></div>
+    </div>
 
-    <!-- Pino Cachoeiro de Itapemirim (unidade parceira) -->
-    <g>
-      <circle cx="168" cy="495" r="12" fill="var(--red)"/>
-      <circle cx="168" cy="495" r="5" fill="var(--white)"/>
-      <text x="30" y="530" class="pin-label" style="font-size:24px;">Cachoeiro de Itapemirim</text>
-      <text x="30" y="552" class="pin-sub">Unidade parceira</text>
-    </g>
-  </svg>
+    <div class="pin" style="left:44.9%; top:84.2%;">
+      <div class="dotpin"></div>
+      <div class="pin-text"><div class="city">Cachoeiro de Itapemirim</div><div class="tag">Unidade parceira</div></div>
+    </div>
+  </div>
 
   <div class="footer">
     <span>Mappin ES 2027 · Grupo 6</span>
-    <span>Mapa ilustrativo, sem escala</span>
+    <span>Mapa esquemático, sem escala</span>
   </div>
 </section>
 </body>
