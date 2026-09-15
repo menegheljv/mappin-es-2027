@@ -36,29 +36,28 @@
 
   .grid-wrap{ margin-top:60px; }
   .fox-anchor{ position:relative; }
-  .fox-anchor .card{ position:relative; z-index:1; }
-  .fox-group{
-    position:absolute; z-index:0; top:-34px; right:24px;
+  .fox-anchor .card{ position:relative; z-index:2; }
+  .fox-tail{
+    position:absolute; z-index:0; width:58px; height:auto;
+    top:-10px; right:78px;
+    animation:fox-tail-rise 3.5s ease-in-out infinite;
+  }
+  .fox-face{
+    position:absolute; z-index:1; width:96px; height:auto;
+    top:-34px; right:24px;
     animation:fox-peek 3.5s ease-in-out infinite;
   }
-  .fox-face{ display:block; width:96px; height:auto; position:relative; z-index:1; }
-  .fox-tail{
-    position:absolute; z-index:2; width:80px; height:auto;
-    left:36px; top:8px; transform-origin:22% 85%;
-    animation:fox-tail-swipe 3.5s ease-in-out infinite;
-  }
   @keyframes fox-peek{
-    0%, 55%   { transform:translateY(0); }
-    70%       { transform:translateY(-34px); }
-    85%       { transform:translateY(-34px); }
+    0%, 50%   { transform:translateY(0); }
+    65%       { transform:translateY(-34px); }
+    82%       { transform:translateY(-34px); }
     100%      { transform:translateY(0); }
   }
-  @keyframes fox-tail-swipe{
-    0%, 55%   { transform:translate(26px,50px) rotate(55deg); opacity:0; }
-    65%       { opacity:1; }
-    75%, 82%  { transform:translate(-17px,-8px) rotate(-6deg); opacity:1; }
-    92%       { opacity:0; }
-    100%      { transform:translate(26px,50px) rotate(55deg); opacity:0; }
+  @keyframes fox-tail-rise{
+    0%, 58%   { transform:translateY(0); }
+    73%       { transform:translateY(-28px); }
+    90%       { transform:translateY(-28px); }
+    100%      { transform:translateY(0); }
   }
 </style>
 </head>
@@ -79,10 +78,8 @@
         <div class="desc">11 slides: capa, rebranding, as 8 perguntas do briefing e fechamento com a banca.</div>
       </a>
       <div class="fox-anchor">
-        <div class="fox-group">
-          <img class="fox-face" src="fox-hiding.png" alt="Raposa espiando atrás do bloco Identidade visual" />
-          <img class="fox-tail" src="fox-tail.png" alt="" />
-        </div>
+        <img class="fox-tail" src="fox-tail.png" alt="" />
+        <img class="fox-face" src="fox-hiding.png" alt="Raposa espiando atrás do bloco Identidade visual" />
         <a class="card" href="identidade-visual.html">
           <div class="tag">Marca</div>
           <div class="title">Identidade visual</div>
