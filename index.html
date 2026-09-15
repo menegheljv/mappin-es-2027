@@ -37,18 +37,28 @@
   .grid-wrap{ margin-top:60px; }
   .fox-anchor{ position:relative; }
   .fox-anchor .card{ position:relative; z-index:1; }
-  .fox-behind{
-    position:absolute; z-index:0; width:112px; height:112px;
-    object-fit:cover; border-radius:50%;
-    border:4px solid var(--white); box-shadow:0 8px 20px rgba(43,20,8,.3);
-    top:-40px; right:22px;
+  .fox-group{
+    position:absolute; z-index:0; top:-34px; right:24px;
     animation:fox-peek 3.5s ease-in-out infinite;
+  }
+  .fox-face{ display:block; width:96px; height:auto; position:relative; z-index:1; }
+  .fox-tail{
+    position:absolute; z-index:2; width:80px; height:auto;
+    left:36px; top:8px; transform-origin:22% 85%;
+    animation:fox-tail-swipe 3.5s ease-in-out infinite;
   }
   @keyframes fox-peek{
     0%, 55%   { transform:translateY(0); }
     70%       { transform:translateY(-34px); }
     85%       { transform:translateY(-34px); }
     100%      { transform:translateY(0); }
+  }
+  @keyframes fox-tail-swipe{
+    0%, 55%   { transform:translate(26px,50px) rotate(55deg); opacity:0; }
+    65%       { opacity:1; }
+    75%, 82%  { transform:translate(-17px,-8px) rotate(-6deg); opacity:1; }
+    92%       { opacity:0; }
+    100%      { transform:translate(26px,50px) rotate(55deg); opacity:0; }
   }
 </style>
 </head>
@@ -69,7 +79,10 @@
         <div class="desc">11 slides: capa, rebranding, as 8 perguntas do briefing e fechamento com a banca.</div>
       </a>
       <div class="fox-anchor">
-        <img class="fox-behind" src="fox-peek.jpg" alt="Raposa espiando atrás do bloco Identidade visual" />
+        <div class="fox-group">
+          <img class="fox-face" src="fox-hiding.png" alt="Raposa espiando atrás do bloco Identidade visual" />
+          <img class="fox-tail" src="fox-tail.png" alt="" />
+        </div>
         <a class="card" href="identidade-visual.html">
           <div class="tag">Marca</div>
           <div class="title">Identidade visual</div>
