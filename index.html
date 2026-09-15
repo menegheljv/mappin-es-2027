@@ -34,17 +34,19 @@
   .header-row{ display:flex; align-items:center; gap:16px; }
   .header-row img{ display:block; width:48px; height:48px; flex:0 0 auto; }
 
-  .grid-wrap{ position:relative; margin-top:48px; }
+  .grid-wrap{ position:relative; margin-top:76px; }
   .fox-behind{
-    position:absolute; z-index:0; width:92px; height:auto;
-    right:28px; bottom:-58px;
-    animation:fox-peek 3.5s ease-in-out infinite;
+    position:absolute; z-index:0; width:112px; height:112px;
+    object-fit:cover; border-radius:50%;
+    border:4px solid var(--white); box-shadow:0 8px 20px rgba(43,20,8,.3);
+    top:-48px; right:22px;
+    animation:fox-peek 4.5s ease-in-out infinite;
   }
   @keyframes fox-peek{
-    0%, 55%   { transform:translateY(0); }
-    70%       { transform:translateY(-38px); }
-    85%       { transform:translateY(-38px); }
-    100%      { transform:translateY(0); }
+    0%, 60%   { transform:translateY(0) rotate(-2deg); }
+    78%       { transform:translateY(-20px) rotate(2deg); }
+    90%       { transform:translateY(-20px) rotate(2deg); }
+    100%      { transform:translateY(0) rotate(-2deg); }
   }
   .grid{ display:grid; grid-template-columns:1fr 1fr; gap:20px; position:relative; z-index:1; }
   @media (max-width:640px){ .grid{ grid-template-columns:1fr; } }
@@ -60,7 +62,7 @@
   <p class="lead">Material completo do desafio misto B2C + B2B: deck, identidade visual, mapa de território e divisão de tarefas.</p>
 
   <div class="grid-wrap">
-    <img class="fox-behind" src="fox-hiding.png" alt="Rosto da raposa espiando atrás dos blocos" />
+    <img class="fox-behind" src="fox-peek.jpg" alt="Raposa espiando atrás dos blocos" />
     <div class="grid">
       <a class="card" href="deck.html">
         <div class="tag">Apresentação</div>
