@@ -29,10 +29,22 @@
   a.card .title{ font-family:'Bebas Neue'; font-size:32px; text-transform:uppercase; margin-top:6px; letter-spacing:.02em; }
   a.card .desc{ font-size:15px; color:var(--pink-soft); margin-top:8px; line-height:1.4; }
   footer{ margin-top:70px; font-size:14px; color:var(--ink-soft); font-weight:600; letter-spacing:.04em; text-transform:uppercase; }
+
+  .fox-track{ position:relative; width:100%; height:60px; overflow:hidden; }
+  .fox-track img{
+    position:absolute; top:2px; width:52px; height:52px;
+    animation:fox-run 4.5s linear infinite, fox-bob .45s ease-in-out infinite;
+  }
+  @keyframes fox-run{
+    from{ left:100%; }
+    to{ left:-60px; }
+  }
+  @keyframes fox-bob{ 0%,100%{ margin-top:0; } 50%{ margin-top:-6px; } }
 </style>
 </head>
 <body>
 <div class="wrap">
+  <div class="fox-track"><img src="fox-cream.png" alt="Raposa correndo" /></div>
   <div class="eyebrow">Mappin ES 2027 · Grupo 6 · Duelo 3</div>
   <h1>Poucas lojas,<br/>uma marca inteira</h1>
   <p class="lead">Material completo do desafio misto B2C + B2B: deck, identidade visual, mapa de território e divisão de tarefas.</p>
@@ -41,7 +53,7 @@
     <a class="card" href="deck.html">
       <div class="tag">Apresentação</div>
       <div class="title">Deck completo</div>
-      <div class="desc">8 slides: diagnóstico, campanha, rebranding, B2C, B2B, integração e fechamento.</div>
+      <div class="desc">11 slides: capa, rebranding, as 8 perguntas do briefing e fechamento com a banca.</div>
     </a>
     <a class="card" href="identidade-visual.html">
       <div class="tag">Marca</div>
