@@ -56,6 +56,7 @@ O vermelho do letreiro histórico do Mappin ganha um símbolo novo, a marca deix
 | Insight | Com os juros do país nas alturas, até quem ganha bem pensa duas vezes antes de parcelar em qualquer cartão. |
 | Benefício procurado | Comprar numa loja física de referência na cidade, com crediário justo, sem os juros abusivos do mercado. |
 | Proposta de valor | Poucas lojas, mas lojas-âncora: o Mappin ES volta como ponto físico de referência em Vitória e Vila Velha, com crediário próprio e curadoria, inclusive de marcas parceiras do interior. |
+| Dado real | O ES é o 7º estado que mais recebeu migrantes do país entre 2017 e 2022 (saldo de +27,8 mil pessoas, a maioria vinda de RJ, SP e MG) e chegou a 4,1 milhões de habitantes em 2026, crescendo mais que o Brasil (0,58% vs 0,37%). Fonte: IBGE, Censo 2022 e Estimativas 2026. |
 | Mensagem | "O Mappin voltou. Mas agora, do seu jeito.", ideia central: "O que você procura. E o que você ainda vai descobrir." (nostalgia chama atenção, mas o foco é a nova experiência, releitura, não nostalgia) |
 | Touchpoint | Loja flagship em pontos nobres da Grande Vitória + mídia paga local + parceria com prédios e condomínios. |
 | Formato | Loja conceito (showroom) + app com crediário digital integrado, válido também nas lojas parceiras do interior. |

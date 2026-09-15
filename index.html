@@ -36,14 +36,16 @@
 
   .grid-wrap{ position:relative; margin-top:48px; }
   .fox-behind{
-    position:absolute; z-index:0; top:0; width:56px; height:56px;
-    animation:fox-run 5s linear infinite, fox-bob .45s ease-in-out infinite;
+    position:absolute; z-index:0; width:64px; height:64px;
+    right:14px; bottom:-14px;
+    animation:fox-peek 3.5s ease-in-out infinite;
   }
-  @keyframes fox-run{
-    from{ left:100%; }
-    to{ left:-60px; }
+  @keyframes fox-peek{
+    0%, 55%   { transform:translateY(0); }
+    70%       { transform:translateY(-30px); }
+    85%       { transform:translateY(-30px); }
+    100%      { transform:translateY(0); }
   }
-  @keyframes fox-bob{ 0%,100%{ margin-top:0; } 50%{ margin-top:-6px; } }
   .grid{ display:grid; grid-template-columns:1fr 1fr; gap:20px; position:relative; z-index:1; }
   @media (max-width:640px){ .grid{ grid-template-columns:1fr; } }
 </style>
@@ -58,7 +60,7 @@
   <p class="lead">Material completo do desafio misto B2C + B2B: deck, identidade visual, mapa de território e divisão de tarefas.</p>
 
   <div class="grid-wrap">
-    <img class="fox-behind" src="fox-cream.png" alt="Raposa correndo atrás dos blocos" />
+    <img class="fox-behind" src="fox-cream.png" alt="Raposa se escondendo atrás dos blocos" />
     <div class="grid">
       <a class="card" href="deck.html">
         <div class="tag">Apresentação</div>
